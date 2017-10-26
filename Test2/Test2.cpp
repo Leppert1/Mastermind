@@ -23,10 +23,10 @@ public:
 
 	void update() override
 	{
-		/*z = input().mouse_x();
+		z = input().mouse_x();
 		y = input().mouse_y();
 		x = (x + 1) % 300;
-		*/
+		
 		x = input().mouse_x();
 		y = input().mouse_y();
 		if (input().down(Gosu::MS_LEFT))
@@ -67,4 +67,5 @@ int main()
 {
 	GameWindow window;
 	window.show();
+	printf("Hallo Welt");
 }
