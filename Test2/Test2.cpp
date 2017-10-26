@@ -16,7 +16,7 @@ public:
 	{
 		set_caption("Gosu Tutorial Game");
 	}
-	int x = 2;
+	int x = 3;
 	int y = 0;
 	int z = 0;
 	double rot = 0.0;
