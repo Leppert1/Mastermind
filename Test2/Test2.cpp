@@ -18,7 +18,7 @@ public:
 	}
 	int x = 3;
 	int y = 1;
-	int z = 0;
+	int z = 20;
 	double rot = 0.0;
 
 	void update() override
