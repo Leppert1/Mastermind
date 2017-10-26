@@ -16,17 +16,17 @@ public:
 	{
 		set_caption("Gosu Tutorial Game");
 	}
-	int x = 0;
-	int y = 0;
-	int z = 0;
+	int x = 2;
+	int y = 3;
+	int z = 4;
 	double rot = 0.0;
 
 	void update() override
 	{
-		/*z = input().mouse_x();
+		z = input().mouse_x();
 		y = input().mouse_y();
 		x = (x + 1) % 300;
-		*/
+		
 		x = input().mouse_x();
 		y = input().mouse_y();
 		if (input().down(Gosu::MS_LEFT))
@@ -67,4 +67,5 @@ int main()
 {
 	GameWindow window;
 	window.show();
+	printf("Hallo Welt");
 }
