@@ -12,7 +12,7 @@ public:
 	Gosu::Image bild;
 
 	GameWindow()
-		: Window(700, 960)
+		: Window(710, 960)
 		, bild("Rakete.png")
 	{
 		set_caption("Gosu Tutorial Game");
