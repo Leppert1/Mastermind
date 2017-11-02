@@ -13,7 +13,7 @@ public:
 
 	GameWindow()
 		: Window(710, 960)
-		, bild("Rakete.png")
+		, bild("Kugel_Blau.png")
 	{
 		set_caption("Gosu Tutorial Game");
 	}
