@@ -6,7 +6,7 @@
 #include <Gosu/Gosu.hpp>
 #include <Gosu/AutoLink.hpp>
 
-class GameWindow : public Gosu :: Window {
+class GameWindow : public Gosu::Window {
 
 public:
 	Gosu::Image bild;
@@ -27,7 +27,7 @@ public:
 		z = input().mouse_x();
 		y = input().mouse_y();
 		x = (x + 1) % 300;
-		
+
 		x = input().mouse_x();
 		y = input().mouse_y();
 		if (input().down(Gosu::MS_LEFT))
@@ -43,18 +43,18 @@ public:
 	void draw() override
 	{
 		/*	graphics().draw_line
-			(
-				x, 20, Gosu::Color::RED,
-				200, 100, Gosu::Color::GREEN,
-				0.0 // Ebene der Linie
-			);
-			graphics().draw_triangle
-			(
-				z, y, Gosu::Color::RED,
-				200, 100, Gosu::Color::GREEN,
-				200, 400, Gosu::Color::BLUE,
-				0.0
-			);
+		(
+		x, 20, Gosu::Color::RED,
+		200, 100, Gosu::Color::GREEN,
+		0.0 // Ebene der Linie
+		);
+		graphics().draw_triangle
+		(
+		z, y, Gosu::Color::RED,
+		200, 100, Gosu::Color::GREEN,
+		200, 400, Gosu::Color::BLUE,
+		0.0
+		);
 		*/
 		bild.draw_rot
 		(x, y, 0.0,
