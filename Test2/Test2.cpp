@@ -6,12 +6,13 @@
 #include <Gosu/Gosu.hpp>
 #include <Gosu/AutoLink.hpp>
 
-class GameWindow : public Gosu::Window {
+class GameWindow : public Gosu :: Window {
+
 public:
 	Gosu::Image bild;
 
 	GameWindow()
-		: Window(1000, 1000)
+		: Window(710, 960)
 		, bild("Rakete.png")
 	{
 		set_caption("Gosu Tutorial Game");
