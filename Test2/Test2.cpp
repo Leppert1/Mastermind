@@ -9,11 +9,19 @@
 class GameWindow : public Gosu :: Window {
 
 public:
-	Gosu::Image bild;
+	Gosu::Image kblau, rahmen, kgelb, kgrau, kgrün, klila, kpink, krot, ktürkis;
 
 	GameWindow()
 		: Window(710, 960)
-		, bild("Kugel_Blau.png")
+		, kgelb("Kugel_Gelb.png")
+		, kgrau("Kugel_Grau.png")
+		, kgrün("Kugel_Gruen.png")
+		, klila("Kugel_Lila.png")
+		, kpink("Kugel_Pink.png")
+		, krot("Kugel_Rot.png")
+		, ktürkis("Kugel_Tuerkies.png")
+		, kblau ("Kugel_Blau.png")
+		, rahmen ("Rahmen.png")
 	{
 		set_caption("Gosu Tutorial Game");
 	}
@@ -42,24 +50,12 @@ public:
 
 	void draw() override
 	{
-		/*	graphics().draw_line
-			(
-				x, 20, Gosu::Color::RED,
-				200, 100, Gosu::Color::GREEN,
-				0.0 // Ebene der Linie
-			);
-			graphics().draw_triangle
-			(
-				z, y, Gosu::Color::RED,
-				200, 100, Gosu::Color::GREEN,
-				200, 400, Gosu::Color::BLUE,
-				0.0
-			);
-		*/
-		bild.draw_rot
+		rahmen.draw_rot(20, 20, 0.0, 0.0, 0.0, 0.0);
+		rahmen.draw_rot(50, 50, 0.0, 0.0, 0.0, 0.0);
+		kblau.draw_rot
 		(x, y, 0.0,
 			rot, // Rotationswinkel in Grad
-			0.5, 0.5 // Position der "Mitte"
+			0.0, 0.0 // Position der "Mitte"
 		);
 	}
 };
@@ -70,3 +66,4 @@ int main()
 	window.show();
 	printf("Hallo Welt");
 }
+
